@@ -1,19 +1,21 @@
 terraform {
+
+  cloud {
+    organization = "lasmarco"
+    workspaces {
+      name = "iaac-lasmarco-dev"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.16"
+      version = "~> 4.67.0"
     }
   }
 
-  required_version = ">= 1.2.0"
+  required_version = ">= 1.6.0"
 }
 
 provider "aws" {
-  region  = "sa-east-1"
-}
-
-resource "aws_instance" "app_server" {
-  ami           = "ami-0b6c2d49148000cd5"
-  instance_type = "t2.nano"
+    region = var.aws_region
 }
