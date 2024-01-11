@@ -1,4 +1,4 @@
-resource "aws_ecr_repository" "lambda_ops" {
+resource "aws_ecr_repository" "lambda" {
   name                 = "lambda-ops"
   image_tag_mutability = "MUTABLE"
 
