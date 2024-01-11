@@ -12,7 +12,7 @@ resource "aws_lambda_function" "example_lambda" {
   filename         = data.archive_file.lambda_zip.output_path
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
 
-  image_uri = aws_ecr_repository.lambda.repository_url
+  image_uri = "455370095424.dkr.ecr.sa-east-1.amazonaws.com/lambda-ops"
 
   depends_on = [aws_ecr_repository.lambda]
 }
