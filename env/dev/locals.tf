@@ -1,5 +1,5 @@
 locals {
-  default_tags = {
+  tags = {
     workload = "lasma"
     name     = "terraform-dev"
     owner    = "infra"
