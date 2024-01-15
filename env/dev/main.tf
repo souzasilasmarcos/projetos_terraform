@@ -22,8 +22,8 @@ provider "aws" {
     tags = {
       name     = local.workload.name
       workload = local.workload.name
-      area     = local.workloa.area
-      env      = local.workloa.env
+      area     = local.workload.area
+      env      = local.workload.env
       owner    = local.workload.owner
 
     }

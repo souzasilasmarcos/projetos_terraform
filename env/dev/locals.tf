@@ -1,12 +1,12 @@
 locals {
-  tags = {
-    workload = "lasma"
-    name     = "terraform-dev"
+  workload = {    
+    name     = "lasma-dev"
     owner    = "infra"
     env      = "dev"
     area     = "academy"
-
   }
+
+
 }
 
 resource "aws_instance" "app_server" {
