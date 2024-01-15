@@ -17,5 +17,15 @@ terraform {
 }
 
 provider "aws" {
-    region = var.aws_region
+  region = var.aws_region
+  default_tags {
+    tags = {
+      name     = local.workload.name
+      workload = local.workload.name
+      area     = local.workloa.area
+      env      = local.workloa.env
+      owner    = local.workload.owner
+
+    }
+  }
 }
