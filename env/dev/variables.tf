@@ -4,7 +4,7 @@ variable "aws_region" {
 }
 
 variable "instance_type" {
-  default = "t2.micro"
+  default     = "t2.micro"
   description = "instance type ec2 linux"
-  
+
 }
