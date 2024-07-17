@@ -1,6 +1,6 @@
 locals {
   workload = {
-    name  = "lasma-dev"
+    name  = "lasma"
     owner = "infra"
     env   = "dev"
     area  = "it_eng"
